@@ -13,6 +13,22 @@
 .intro > p{
     font-size:18px;
 }
+
+.aboutme button{
+    width:60%;
+    padding:5% 5%;
+    border:4px solid #8CECF2;
+    font-size:20px;
+    border-radius:8px;
+    font-weight:bold;
+    background-color:#8CECF2;
+    color:#18181B;
+    &:hover{
+        background-color:#18181B;
+        color:white;
+    }
+}
+
 .contents{
     font-size:18px;
 }
