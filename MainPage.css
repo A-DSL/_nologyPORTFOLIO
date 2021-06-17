@@ -235,3 +235,123 @@ body {
 .divider__largegap {
   height: 8px;
 }
+
+/*Common Tablet/Desktop Sizes:
+Tablet: 481-768px
+Laptop/Desktop: 769-1025px
+
+Formatting below is for tablet and desktop. Runs if window screen is 481px or less (min-width would run it if the screen was 481px or more).
+*/
+@media screen and (min-width: 481px) {
+  body {
+    height: 400vh;
+  }
+
+  .aboutme {
+    height: 22.5%;
+    background-image: url("./backgroundbig.jpg");
+    background-size: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aboutme .intro {
+    height: 30%;
+    width: 50%;
+    margin-right: 6%;
+  }
+  .aboutme .intro h1 {
+    width: 30%;
+    margin-top: 30%;
+  }
+  .aboutme .intro .intro > p {
+    width: 20%;
+  }
+  .aboutme button {
+    height: 10%;
+    width: 15%;
+    margin: 20% 22% 0 0%;
+    padding: 0;
+  }
+  .aboutme .contents {
+    margin-top: 0;
+    margin-right: 78%;
+    height: 26%;
+  }
+  .aboutme .contents .contents__header {
+    margin-bottom: 29%;
+  }
+
+  .skills {
+    margin-top: 1%;
+    height: 18%;
+  }
+  .skills h1 {
+    font-size: 28px;
+    margin-bottom: 4%;
+  }
+  .skills .skills__list__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skills .skills__list__image > * {
+    font-size: 240%;
+    width: 200%;
+    height: 200%;
+    color: #8CECF2;
+  }
+  .skills .skills__list__image > img {
+    width: 100%;
+    height: 100%;
+  }
+  .skills .skills__list__text {
+    margin-top: 5px;
+  }
+  .skills .skills__list__text > p {
+    font-size: 18px;
+  }
+
+  .portfolio__header {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 28px;
+  }
+
+  .portfolio {
+    height: 35%;
+    margin-left: 1%;
+  }
+  .portfolio .portfolio__text {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .portfolio .portfolio__text > div * {
+    margin: 2% 0;
+  }
+  .portfolio .portfolio__text .portfolio__buttons button {
+    padding: 4% 6%;
+  }
+  .portfolio .portfolio__images {
+    width: 50%;
+  }
+  .portfolio .portfolio__images > div {
+    height: 20%;
+    margin-left: 5%;
+    width: 60%;
+  }
+  .portfolio .projectfour {
+    margin-bottom: 8%;
+  }
+  .portfolio .imagefour {
+    margin-bottom: 8%;
+  }
+
+  .contact {
+    height: 3%;
+  }
+  .contact h4 {
+    font-size: 20px;
+  }
+}
