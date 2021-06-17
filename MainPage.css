@@ -240,7 +240,7 @@ body {
 Tablet: 481-768px
 Laptop/Desktop: 769-1025px
 
-Formatting below is for tablet and desktop. Runs if window screen is 481px or less (min-width would run it if the screen was 481px or more).
+Formatting below is for desktop. Runs if window screen is 481px or more.
 */
 @media screen and (min-width: 481px) {
   body {
@@ -277,11 +277,20 @@ Formatting below is for tablet and desktop. Runs if window screen is 481px or le
     margin-top: 0;
     margin-right: 78%;
     height: 26%;
+    /*Formatting below is for tablet; makes minor adjustments to desktop format. Runs if screen width is 1024px or less.*/
   }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .aboutme .contents {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 481px) {
   .aboutme .contents .contents__header {
     margin-bottom: 29%;
   }
-
+}
+@media screen and (min-width: 481px) {
   .skills {
     margin-top: 1%;
     height: 18%;
@@ -312,13 +321,15 @@ Formatting below is for tablet and desktop. Runs if window screen is 481px or le
   .skills .skills__list__text > p {
     font-size: 18px;
   }
-
+}
+@media screen and (min-width: 481px) {
   .portfolio__header {
     margin-top: 4%;
     margin-bottom: 3%;
     font-size: 28px;
   }
-
+}
+@media screen and (min-width: 481px) {
   .portfolio {
     height: 35%;
     margin-left: 1%;
@@ -347,7 +358,8 @@ Formatting below is for tablet and desktop. Runs if window screen is 481px or le
   .portfolio .imagefour {
     margin-bottom: 8%;
   }
-
+}
+@media screen and (min-width: 481px) {
   .contact {
     height: 3%;
   }

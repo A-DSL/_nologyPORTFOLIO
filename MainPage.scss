@@ -46,7 +46,7 @@ body{
 Tablet: 481-768px
 Laptop/Desktop: 769-1025px
 
-Formatting below is for tablet and desktop. Runs if window screen is 481px or less (min-width would run it if the screen was 481px or more).
+Formatting below is for desktop. Runs if window screen is 481px or more.
 */
 @media screen and (min-width:481px){
     body{
@@ -81,6 +81,10 @@ Formatting below is for tablet and desktop. Runs if window screen is 481px or le
             margin-top:0;
             margin-right:78%;
             height:26%;
+            /*Formatting below is for tablet; makes minor adjustments to desktop format. Runs if screen width is 1024px or less.*/
+            @media screen and (max-width:1024px){
+                margin-top:10%;
+            }
             .contents__header{
                 margin-bottom:29%;
             }
