@@ -1,0 +1,50 @@
+/*Modify this section in Portfolio branch*/
+
+
+.portfolio{
+    height:160vh;
+    width:100vw;
+    display:flex;
+
+    .portfolio__text{
+        width:50vw;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        margin-left:5vw;
+        > div *{
+            margin:5% 0;
+        }
+        > div .portfolio__description{
+            font-size:14px;
+        }
+        > div .portfolio__recipe{
+            font-size:12px;
+        }
+        > div .portfolio__buttons *{
+            padding:5%;
+            margin-right:6%;
+            font-weight:bold;
+            border:2px solid #8CECF2;
+            border-radius:4px;
+        }
+    }
+    .portfolio__buttons > button:hover{
+        color:#18181B;
+        background-color:#8CECF2;
+    }
+
+    .portfolio__images{
+        width:50vw; 
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        margin-right:5vw;
+        div{
+            height:20vh;
+            width:46vw;
+            border:4px solid #8CECF2;
+            border-radius:8px;
+        }   
+    }
+}
