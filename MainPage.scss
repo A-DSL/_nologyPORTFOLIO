@@ -7,6 +7,31 @@
 *{
     margin:0; padding:0; box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
-    background-color:#18181B;
     color:white;
+}
+body{
+    background-color:#18181B;
+}
+
+/*Divider formatting*/
+.divider{
+    width:100vw;
+}
+.divider__small{
+    height:3px;
+    background-color:#FF00C7;
+}
+.divider__medium{
+    height:5px;
+    background-color:#FF00C7;
+}
+.divider__large{
+    height:12px;
+    background-color:#FF00C7;
+}
+.divider__smallgap{
+    height:5px;
+}
+.divider__largegap{
+    height:8px;
 }

@@ -1,7 +1,9 @@
 /*Modify this section in Skills branch*/
 .skills{
-    display:flex; flex-direction:column;
-    height:120vh;
+    display:flex; 
+    flex-direction:column;
+    margin-top:10vh;
+    height:55vh;
 }
 .skills > h1{
     width:80vw;
@@ -32,15 +34,21 @@
     }
 }
 
-.skills__list__image > *{
-    font-size:120%;
-    width:50%;
-    height:50%;
-    color:#8CECF2;
+.skills__list__image{
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
+    > *{
+        font-size:120%;
+        width:100%;
+        height:100%;
+        color:#8CECF2;
+    }
+    > img{
+        width:50%; 
+        height:50%;
+    }
 }
 .skills__list__text > *{
     font-size:12px;

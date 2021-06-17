@@ -1,6 +1,12 @@
 /*Modify this section in Portfolio branch*/
+.portfolio__header {
+  width: 80vw;
+  margin: 10vh 10vw 0 10vw;
+  font-size: 20px;
+}
+
 .portfolio {
-  height: 160vh;
+  height: 155vh;
   width: 100vw;
   display: flex;
 }
@@ -25,11 +31,13 @@
   margin-right: 6%;
   font-weight: bold;
   border: 2px solid #8CECF2;
+  background-color: #18181B;
   border-radius: 4px;
 }
 .portfolio .portfolio__buttons > button:hover {
   color: #18181B;
   background-color: #8CECF2;
+  cursor: pointer;
 }
 .portfolio .portfolio__images {
   width: 50vw;
