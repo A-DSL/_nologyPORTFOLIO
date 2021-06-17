@@ -1,3 +1,97 @@
+/*Default formatting is for phone. @media statements will be used for desktop fit.*/
+
+/*Modify this section in main branch.*/
+.aboutme {
+  margin: 25vw 0 0 15vw;
+  width: 70vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.intro > h1 {
+  font-size: 24px;
+}
+
+.intro > p {
+  font-size: 18px;
+}
+
+.aboutme button {
+  width: 60%;
+  padding: 5% 5%;
+  border: 4px solid #8CECF2;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #8CECF2;
+  color: #18181B;
+}
+.aboutme button:hover {
+  background-color: #18181B;
+  color: white;
+}
+
+.contents {
+  font-size: 18px;
+}
+
+/*Modify this section in Skills branch*/
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+}
+
+.skills > h1 {
+  width: 80vw;
+  margin: 0 10vw 5vw 10vw;
+  font-size: 20px;
+}
+
+.skills__list {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+.skills__list .skills__list__row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills__list .skills__list__row .skills__list__block {
+  width: 22vw;
+  margin: 5vh 1vw 5vh 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__list__image > * {
+  font-size: 120%;
+  width: 50%;
+  height: 50%;
+  color: #8CECF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills__list__text > * {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /*Modify this section in Portfolio branch*/
 .portfolio {
   height: 160vh;
