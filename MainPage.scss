@@ -1,5 +1,6 @@
-/*@media sections will handle the CSS presentation on desktop; this is formatted for mobile by default.*/
+/*Default formatting is for phone. @media statements will be used for desktop fit.*/
 @import "_AboutMe";
+@import "_Skills";
 
 *{
     margin:0; padding:0; box-sizing:border-box;
