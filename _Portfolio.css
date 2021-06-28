@@ -26,7 +26,7 @@
 .portfolio .portfolio__text > div .portfolio__recipe {
   font-size: 12px;
 }
-.portfolio .portfolio__text > div .portfolio__buttons * {
+.portfolio .portfolio__text > div .portfolio__buttons button {
   padding: 5%;
   margin-right: 6%;
   font-weight: bold;
@@ -34,7 +34,10 @@
   background-color: #18181B;
   border-radius: 4px;
 }
-.portfolio .portfolio__buttons > button:hover {
+.portfolio .portfolio__text > div .portfolio__buttons > a {
+  margin: 0;
+}
+.portfolio .portfolio__buttons button:hover {
   color: #18181B;
   background-color: #8CECF2;
   cursor: pointer;
