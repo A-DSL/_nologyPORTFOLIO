@@ -7,142 +7,95 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 </head>
 
-
 <body>
-    <!--Modify this section in main branch-->
-    <header class="aboutme">
-        <div class="intro">
-            <h1>Welcome to my portfolio.</h1>
-            <p>My name's Alice. I'm a web developer fresh off the ground, fueled by aspirations relating to video games, audio, and art. They'll take time, but I have the drive to reach them.</p>
-        </div>
-        <button>CV</button>
-        <div class="contents">
+<!--About Me-->
+<a id="about"></a>
+<main class="aboutme section">
+    <div class="aboutme__intro">
+        <h1>Welcome to my portfolio.</h1>
+        <p>My name's Alice. I'm a web developer fresh off the ground, fueled by aspirations relating to coding, video games, audio and more. It's a wide world that I want to soar into, but that just makes me all the more hyped to explore it.</p>
+        <div class="aboutme__contents">
             <p class="contents__header">Skip to a specific section:</p>
             <!--Add hyperlinks after the other sections have been finished and merged with this one.-->
-            <p class="contents__item">-  About Me</p>
-            <p class="contents__item">-  My Skills</p>
-            <p class="contents__item">-  Portfolio</p>
-            <p class="contents__item">-  Contact Details</p>
+            <p class="contents__item">-  <a href="#about">About Me</a></p>
+            <p class="contents__item">-  <a href="#skills">My Skills</a></p>
+            <p class="contents__item">-  <a href="#portfolio">Portfolio</a></p>
+            <p class="contents__item">-  <a href="#contact">Contact Details</a></p>
         </div>
-    </header>
+    </div>
+    <a class="aboutme__CV button" href="">CV</a>
+</main>
 
-    <!--Modify this section in Skills branch-->
-    <section class="skills">
-        <h1>My Skills:</h1>
-        <!--Course Skills Row 1-->
-        <div class="skills__list">
-            <div class="skills__list__row">
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <i class="devicon-github-original"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>GitHub</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <i class="devicon-html5-plain"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>HTML5</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                     <div class="skills__list__image">
-                        <i class="devicon-css3-plain"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>CSS/SCSS</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <i class="devicon-javascript-plain"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>Javascript</p>
-                    </div>
-                </div>
-            </div>
+<!--Skills-->
+<a id="skills"></a>
+<main class="skills section">
 
-          
-            <!--Course Skills Row 2-->
-            <div class="skills__list__row">
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <i class="devicon-java-plain"></i>
-                    </div>
-                   <div class="skills__list__text">
-                        <p>Java</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <i class="devicon-react-original"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>React</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                     <div class="skills__list__image">
-                        <i class="devicon-firebase-plain"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>Firebase</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <i class="devicon-nodejs-plain"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>NodeJS</p>
-                    </div>
-                </div>
-            </div>
+    <h1 class="headers">Skills</h1>
 
-
-            <!--Other Skills-->
-            <div class="skills__list__row">
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <i class="devicon-windows8-original"></i>
-                    </div>
-                    <div class="skills__list__text">
-                        <p>Word/Excel</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <img src="mail.png">
-                    </div>
-                    <div class="skills__list__text">
-                        <p>Communication</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <img src="gamemaker.png">
-                    </div>
-                    <div class="skills__list__text">
-                        <p>GameMaker 2</p>
-                    </div>
-                </div>
-                <div class="skills__list__block">
-                    <div class="skills__list__image">
-                        <img src="audacity.png">
-                    </div>
-                    <div class="skills__list__text">
-                        <p>Audacity</p>
-                    </div>
-                </div>
-            </div>
-
-
+    <section class="skills__list">
+        <!--GitHub-->        
+        <div class="skills__list__block">
+            <i class="devicon-github-original"></i>
+            <p class="skills__list__text">GitHub</p>
+        </div>
+        <!--HTML5-->        
+        <div class="skills__list__block">
+            <i class="devicon-html5-plain"></i>
+            <p class="skills__list__text">HTML5</p>
+        </div>
+        <!--CSS/SCSS-->        
+        <div class="skills__list__block">
+            <i class="devicon-css3-plain"></i>
+            <p class="skills__list__text">CSS/SCSS</p>
+        </div>
+        <!--Javascript-->        
+        <div class="skills__list__block">
+            <i class="devicon-javascript-plain"></i>
+            <p class="skills__list__text">Javascript</p>
+        </div>
+        <!--NodeJS-->        
+        <div class="skills__list__block">
+            <i class="devicon-nodejs-plain"></i>
+            <p class="skills__list__text">NodeJS</p>
+        </div>        
+        <!--React-->       
+        <div class="skills__list__block">
+            <i class="devicon-react-original"></i>
+            <p class="skills__list__text">React</p>
+        </div>
+        <!--Firebase-->        
+        <div class="skills__list__block">
+            <i class="devicon-firebase-plain"></i>
+            <p class="skills__list__text">Firebase</p>
+        </div>
+        <!--Java-->        
+        <div class="skills__list__block">
+            <i class="devicon-java-plain"></i>
+            <p class="skills__list__text">Java</p>
+        </div>
+        <!--Word/Excel-->
+        <div class="skills__list__block">
+            <i class="devicon-windows8-original"></i>
+            <p class="skills__list__text">Word/Excel</p>
+        </div>
+        <!--Communication-->     
+        <div class="skills__list__block">
+            <img src="mail.png">
+            <p class="skills__list__text">Communication</p>
+        </div>
+        <!--GameMaker 2-->        
+        <div class="skills__list__block">
+            <img src="gamemaker.png">
+            <p class="skills__list__text">GameMaker 2</p>
+        </div>
+        <!--Audacity-->        
+        <div class="skills__list__block">
+            <img src="audacity.png">
+            <p class="skills__list__text">Audacity</p>
         </div>
     </section>
+
+</main>
 
     <nav class="divider divider__small"></nav>
     <nav class="divider divider__smallgap"></nav>
@@ -150,64 +103,100 @@
     <nav class="divider divider__largegap"></nav>
     <nav class="divider divider__large"></nav>
 
-    <!--Modify this section in Portfolio branch-->
-    <h1 class="portfolio__header">Portfolio:</h1>
-    <section class="portfolio">
-        <!--Left side of portfolio section.-->
-        <section class="portfolio__text">
-            <div class="projectone">
-                <h4>Project 1</h4>
-                <p class="portfolio__description">sample text here</p>
-                <p class="portfolio__recipe">Made using:</p>
-                <div class="portfolio__buttons">
-                    <button>GitHub</button>
-                    <button>Website</button>
-                </div>
+<!--Portfolio-->
+<a id="portfolio"></a>
+<main class="portfolio section">
+
+    <h1 class="headers">Portfolio:</h1>
+
+    <!--Left side of portfolio section.-->
+    <section class="portfolio__body">
+        <!--FIGHTER-->
+        <div class="project projectone">
+            <div class="portfolio__text">
+                <h4>FIGHTER</h4>
+                <p class="text__body">A rock-paper-scissors look-alike where you take on your dashing mirror image in a 1-on-1 brawl. Beams, explosions and baseball bats are all at your disposal here, and they each have amped-up Super versions with even more oomph. You'll have to choose wisely to make sure you come out the victor. Made using HTML, SCSS and Javascript.</p>
+                <p class="portfolio__links">
+                    <a class="portfolio__link button" href="https://github.com/A-DSL/_nologyFIGHTER" target="_blank">GitHub</a>
+                    <a class="portfolio__link button" href="https://a-dsl.github.io/_nologyFIGHTER/" target="_blank">Website</a>
+                </p>
             </div>
-            <div class="projecttwo">
+            <div class="portfolio__image"><img src="FIGHTERimage.png"></div>
+        </div>
+        <!--Group Project: nologer-->
+        <div class="project projecttwo">
+            <div class="portfolio__text">
+                <h4>Group Project: nologer</h4>
+                <p class="text__body">nologer was a 4-and-a-half week client project. The purpose of the project was to provide an application that _nology could use to monitor their courses, the courses' schedules, and the coaches assigned to those courses. Includes functionality for creating new curriculums and modules. Made using React and Firebase.</p>
+                <p class="portfolio__links">
+                    <a class="portfolio__link button" href="">GitHub</a>
+                    <a class="portfolio__link button" href="">Website</a>
+                </p>
+            </div>
+            <div class="portfolio__image"><img src="placeholder.png"></div>
+        </div>    
+        <!--Calculator-->    
+        <div class="project projectthree">
+            <div class="portfolio__text">
                 <h4>Calculator</h4>
-                <p class="portfolio__description">Page meant to replicate the design and function of the iPhone calculator.</p>
-                <p class="portfolio__recipe">Made using: HTML, SCSS, Javascript</p>
-                <div class="portfolio__buttons">
-                    <a href="https://github.com/A-DSL/_nologyCALCULATOR"><button>GitHub</button></a>
-                    <a href="https://a-dsl.github.io/_nologyCALCULATOR/"><button>Website</button></a>
-                </div>
+                <p class="text__body">An imitation of the iPhone's simple calculator, complete with all of its functionality. Made using HTML, SCSS and Javascript.</p>
+                <p class="portfolio__links">
+                    <a class="portfolio__link button" href="https://github.com/A-DSL/_nologyCALCULATOR" target="_blank">GitHub</a>
+                    <a class="portfolio__link button" href="https://a-dsl.github.io/_nologyCALCULATOR/" target="_blank">Website</a>
+                </p>
             </div>
-            <div class="projectthree">
-                <h4>Project 3</h4>
-                <p class="portfolio__description">sample text here</p>
-                <p class="portfolio__recipe">Made using:</p>
-                <div class="portfolio__buttons">
-                    <button>GitHub</button>
-                    <button>Website</button>
-                </div>
+            <div class="portfolio__image"><img src="CALCULATORimage.png"></div>
+        </div>
+        <!--Punk API-->
+        <div class="project projectfour">
+            <div class="portfolio__text">
+                <h4>Punk API</h4>
+                <p class="text__body">A front-end retrieval application for the Punk API that allows users to search for and find a variety of beers. Made using React.</p>
+                <p class="portfolio__links">
+                    <a class="portfolio__link button" href="">GitHub</a>
+                    <a class="portfolio__link button" href="">Website</a>
+                </p>
             </div>
-            <div class="projectfour">
-                <h4>Project 4</h4>
-                <p class="portfolio__description">sample text here</p>
-                <p class="portfolio__recipe">Made using:</p>
-                <div class="portfolio__buttons">
-                    <button>GitHub</button>
-                    <button>Website</button>
-                </div>
+            <div class="portfolio__image"><img src="placeholder.png"></div>
+        </div>
+        <!--Morse Code Translator-->
+        <div class="project projectfive">
+            <div class="portfolio__text">
+                <h4>Morse Code Translator</h4>
+                <p class="text__body">An application whose purpose is to translate regular text into Morse Code or vice versa. Made using React.</p>
+                <p class="portfolio__links">
+                    <a class="portfolio__link button" href="">GitHub</a>
+                    <a class="portfolio__link button" href="">Website</a>
+                </p>
             </div>
-        </section>
-        <!--Right side of portfolio section.-->
-        <section class="portfolio__images">
-            <div class="imageone">
-
+            <div class="portfolio__image"><img src="placeholder.png"></div>
+        </div>
+        <!--Fullstack Project-->
+        <div class="project projectsix">
+            <div class="portfolio__text">
+                <h4>Fullstack Project</h4>
+                <p class="text__body">placeholder</p>
+                <p class="portfolio__links">
+                    <a class="portfolio__link button" href="">GitHub</a>
+                    <a class="portfolio__link button" href="">Website</a>
+                </p>
             </div>
-            <div class="imagetwo">
-                
+            <div class="portfolio__image"><img src="placeholder.png"></div>
+        </div>
+        <!--Barracuda Bash-->
+        <div class="project projectseven">
+            <div class="portfolio__text">
+                <h4>Barracuda Bash</h4>
+                <p class="text__body">A GameJam project originally made in 48 hours for the 39th GM48 competition. You play as Mantis, a solitary figure who's found themself face-to-face with a horde of battle-hungry muscular barracudas on a deserted island. There's only one way to win; beat them all! Made in GameMaker Studio 2.</p>
+                <p class="portfolio__links">
+                    <a class="portfolio__link button" href="">GitHub</a>
+                    <a class="portfolio__link button" href="">.exe</a>
+                </p>
             </div>
-            <div class="imagethree">
-                
-            </div>
-            <div class="imagefour">
-                
-            </div> 
-        </section>
+            <div class="portfolio__image"><img src="placeholder.png"></div>
+        </div>
     </section>
+</main>
 
     <nav class="divider divider__small"></nav>
     <nav class="divider divider__smallgap"></nav>
@@ -215,16 +204,28 @@
     <nav class="divider divider__largegap"></nav>
     <nav class="divider divider__large"></nav>
 
+<!--Contact Us-->
+<a id="contact"></a>
+<main class="contact section">
+    <h4>Contact Details</h4>
+    <div class="contact__details">
+        <span>Email: <a href="">alicecemails@gmail.com</a></span>
+        <span>Phone: <a href="">07896 544530</a></span>
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/alice-cellan-jones-064094193/">Alice-Cellan-Jones</a></span>
+    </div>
+</main>
 
-    <!--Modify this section in Contact branch-->
-    <section class="contact">
-            <h4>Contact Details</h4>
-            <div class="contact__details">
-                <span>Email:</span>
-                <span>Phone:</span>
-                <span>LinkedIn:</span>
-            </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
-</html>

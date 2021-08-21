@@ -1,166 +1,373 @@
-/*Default formatting is for phone. @media statements will be used for desktop fit.*/
-@import "_AboutMe";
-@import "_Skills";
-@import "_Portfolio";
-@import "_Contact";
+/*Variables*/
+$titlesize: 28px;
+$regularsizeone: 24px;
+$regularsizetwo: 18px;
+/*16px is a p tag's default font size.*/
+$miniaturesize: 14px;
+$cyan: #8CECF2;
+$pink: #FF00C7;
+$black: #18181B;
 
-$titlesize:28px;
-$regularsizeone:24px;
-$regularsizetwo:20px;
-
+/*Overall*/
 *{
-    margin:0; padding:0; box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
 }
 body{
-    background-color:#18181B;
+    background-color: $black;
 }
+
+.headers{
+    font-size: $regularsizeone;
+    height: 100px;
+    padding-left: 50px;
+    line-height: 200%;
+}
+.section{
+    margin: 2%;
+}
+.button{
+    border: 3px solid $cyan;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*About Me*/
+.aboutme{
+    max-width: 100%;
+    height: auto;
+    min-height: 790px;
+    margin: 0;
+    padding: 2% 2% 2% 50px;
+    display: flex;
+    align-items: center;
+
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .aboutme__intro{
+        margin-top: 1%;
+        width: 50%;
+        margin-left: 10%;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h1{
+            margin-bottom: 2%;           
+        }
+        .aboutme__contents{
+            margin-top: 4%;
+            .contents__item > a{
+                color: $cyan;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+    .aboutme__CV{
+        border: 4px solid $cyan;
+        height: 60px;
+        width: 14%;
+        margin-left: 9.5%; 
+        margin-top: 9.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $cyan;
+        color: $black;
+        &:hover{
+            background-color: $black;
+            color: white;    
+        }
+    }
+}
+
+/*Skills*/
+.skills{
+    max-width: 100%;
+    height: auto;
+}
+.skills__list{
+    display: grid;
+    height: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    > .skills__list__block{
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        > p{
+            font-size: $regularsizetwo;
+        }
+        /*Icons*/
+        > i{
+            font-size: 50px;
+            color: $cyan;
+            padding-bottom: 15px;
+        }
+        > img{
+            padding-bottom: 15px;  
+        }
+    } 
+}
+
+/*Portfolio*/
+.portfolio{
+    max-width: 100%;
+    height: auto;
+}
+.portfolio__body{
+    margin: 10px;
+    height: 85%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    .project{
+        width: 86%;
+        min-height: 200px;
+        max-height: 300px;
+        margin: 2% 0;
+        display: flex;
+        justify-content: space-around;
+        .portfolio__text{
+            margin-top: 4px;
+            width: 60%;
+            margin-right: 3%;
+            h4{
+                margin-bottom: 6px;
+            }
+            .text__body{
+                font-size: $miniaturesize;
+                line-height: 20px;
+            }
+            .portfolio__links{
+                height: 25%;
+                margin-top: 2%;
+                display: flex;
+                align-items: center;
+                .portfolio__link{
+                    margin-right: 10%;
+                    padding: 4% 4%;
+                    border: 3px solid $cyan;
+                    &:hover{
+                        color: $black;
+                        background-color: $cyan;
+                    }
+                }
+            }
+        }
+        .portfolio__image{
+            margin-left: 3%;
+            img{
+                border: 4px solid $cyan;
+                border-radius: 8px;
+                min-width: 25%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+/*Contact*/
+.contact{
+    max-width: 100%;
+    height: auto;
+    padding-left: 50px;
+    > .contact__details{
+        margin-top: 0.5%;
+        font-size: $miniaturesize;
+        > span{
+            margin-right: 1%;
+            > a{
+                color: $cyan;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
 
 /*Divider formatting*/
 .divider{
-    width:100vw;
+    width: 100vw;
 }
 .divider__small{
-    height:3px;
-    background-color:#FF00C7;
+    height: 3px;
+    background-color: $pink;
 }
 .divider__medium{
-    height:5px;
-    background-color:#FF00C7;
+    height: 5px;
+    background-color: $pink;
 }
 .divider__large{
-    height:12px;
-    background-color:#FF00C7;
+    height: 12px;
+    background-color: $pink;
 }
 .divider__smallgap{
-    height:5px;
+    height: 5px;
 }
 .divider__largegap{
-    height:8px;
+    height: 8px;
 }
 
-
-
-/*Common Tablet/Desktop Sizes:
-Tablet: 481-768px
-Laptop/Desktop: 769-1025px
-
-Formatting below is for desktop. Runs if window screen is 481px or more.
-*/
-@media screen and (min-width:481px){
-    body{
-        height:400vh;
+/*Media formatting*/
+/*1. slight alterations to section height and padding, since they're in px*/
+/*2. alteration to skill icon padding*/
+@media screen and (max-width:1025px){
+    .section{
+        margin: 2% 0;
     }
+
     .aboutme{
-        height:22.5%;
-        background-image:url("./backgroundbig.jpg");
-        background-size:100%;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:center;
-        .intro{
-            height:30%;
-            width:50%;
-            margin-right:6%; 
-            h1{
-                width:30%;
-                margin-top:30%;
-            }
-            .intro > p{
-                width:20%;
-            }
-        }
-        button{
-            height:10%;
-            width:15%;
-            margin:20% 22% 0 0%;
-            padding:0;
-        }
-        .contents{
-            margin-top:0;
-            margin-right:78%;
-            height:26%;
-            /*Formatting below is for tablet; makes minor adjustments to desktop format. Runs if screen width is 1024px or less.*/
-            @media screen and (max-width:1024px){
-                margin-top:10%;
-            }
-            .contents__header{
-                margin-bottom:29%;
-            }
-        }
+        margin: 0;
     }
-    .skills{
-        margin-top:1%;
-        height:18%;
-        h1{
-            font-size:$titlesize;
-            margin-bottom:4%;
+
+    .portfolio__body{
+        margin: 0;
+        .project{
+            min-height: 100%;
+            width: 90%;
+            margin-bottom: 4%;
         }
-        .skills__list__image{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            > *{
-                font-size:240%;
-                width:200%;
-                height:200%;
-                color:#8CECF2;
-            }
-            > img{
-                width:100%; 
-                height:100%;
-            }
-        }
-        .skills__list__text{
-            margin-top:5px;
-            > p{
-                font-size:18px;
-            }
-        }
-    }
-    .portfolio__header{
-        margin-top:4%;
-        margin-bottom:3%;
-        font-size:$titlesize;
-    }
-    .portfolio{
-        height:35%;
-        margin-left:1%;
         .portfolio__text{
-            width:50%;
-            margin-left:10%;
-            > div *{
-                margin:2% 0;
-            }
-            .portfolio__buttons button{
-                padding:4% 6%;
-            }
-            .portfolio__buttons button:hover{
-                color:#18181B;
-                background-color:#8CECF2;
-                cursor:pointer;
-            }
-            > div .portfolio__buttons > a{
-                margin:0;
-            }
+            margin-top: 4px;
+            width: 80%;
+            margin-right: 1%;
         }
-        .portfolio__images{
-            width:50%;
-            > div{
-                height:20%;
-                margin-left:5%;
-                width:60%;
-            }
+        .portfolio__links{
+            max-height: 50px;
+            margin-top: 0;
         }
-        .projectfour{margin-bottom:8%;}
-        .imagefour{margin-bottom:8%;}
-    }
-    .contact{
-        height:3%;
-        h4{
-            font-size:$regularsizetwo;
+        .portfolio__image{
+            margin-left: 1%;
+            img{
+                min-width: 5%;
+                max-width: 125px;
+                height: auto;
+            }
         }
     }
+
+    @media screen and (max-width:414px){
+        .section{
+            margin: 0 0 10px 0;
+        }
+        .headers{
+            font-size: $regularsizetwo;
+            height: 60px;
+            margin-top: 20px;
+            padding-left: 15px;
+            line-height: 200%;
+        }
+
+        .aboutme{
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            
+            justify-content: center;
+            .aboutme__intro{
+                margin: 30% 0 0 0;
+                width: 90%;
+                h1{
+                    font-size: $regularsizeone;
+                }
+                p{
+                    font-size: $miniaturesize;    
+                }
+            }
+            .aboutme__CV{
+                height: 60px;
+                width: 150px;
+                margin: 90px 0 0 0;
+            }
+        }
+
+        .skills__list{
+            display: grid;
+            height: 80%;
+            grid-template-columns: 1fr 1fr 1fr;
+            > .skills__list__block{
+                > p{
+                    font-size: $miniaturesize;
+                }
+            }
+        }
+
+        .portfolio{
+            min-height: 2900px;
+        }
+        .project{
+            flex-direction: column;
+            width: 90%;
+            height: 400px;
+            max-height: 400px;
+            padding: 180px 0;
+            .portfolio__text{
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                .text__body{
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            .portfolio__image{
+                min-height: 150px;
+                max-height: 150px;
+                max-width: 150px;
+                margin: 0;
+                padding: 0;
+                img{
+                    min-width: 0;
+                }
+            }
+        }
+        .portfolio__body{
+            grid-template-columns: 1fr;
+            .portfolio__links{
+                margin: 50px 0 20px 0;
+                .portfolio__link{
+                    margin-right: 0;
+                    padding: 1% 1%;
+                    border: 2px solid $cyan;
+                }
+            }
+        }
+
+        .contact{
+            margin: 10px;
+            padding-left: 5px;
+            font-size: $miniaturesize;
+            h4{
+                line-height: 30px;
+            }
+            > .contact__details{
+                display: flex;
+                flex-direction: column;
+            }
+            span{
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
 }

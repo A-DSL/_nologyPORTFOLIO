@@ -1,214 +1,200 @@
-/*Default formatting is for phone. @media statements will be used for desktop fit.*/
-/*Modify this section in main branch.*/
-.aboutme {
-  /*margin:15vh 0 0 15vw;*/
-  width: 100vw;
-  height: 110vh;
-  display: flex;
-  flex-direction: column;
-  background-image: url("./background.png");
-  background-repeat: no-repeat;
-}
-.aboutme > * {
-  margin: 0 7vw;
-}
-
-.intro {
-  margin-bottom: 1vh;
-}
-.intro > h1 {
-  margin-top: 58%;
-  margin-bottom: 4%;
-  font-size: 24px;
-}
-.intro > p {
-  font-size: 18px;
-}
-
-.aboutme button {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  width: 60%;
-  padding: 5% 5%;
-  border: 4px solid #8CECF2;
-  font-size: 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  background-color: #8CECF2;
-  color: #18181B;
-}
-.aboutme button:hover {
-  background-color: #18181B;
-  color: white;
-  cursor: pointer;
-}
-.aboutme .contents {
-  margin-top: 50%;
-  font-size: 18px;
-}
-.aboutme .contents .contents__header {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.aboutme .contents .contents__item {
-  padding-left: 2%;
-  color: #8CECF2;
-  margin: 1px 0;
-}
-.aboutme .contents .contents__item:hover {
-  color: white;
-  cursor: pointer;
-}
-
-/*Modify this section in Skills branch*/
-.skills {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10vh;
-  height: 55vh;
-}
-
-.skills > h1 {
-  width: 80vw;
-  margin: 0 10vw 5vw 10vw;
-  font-size: 20px;
-}
-
-.skills__list {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-}
-.skills__list .skills__list__row {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skills__list .skills__list__row .skills__list__block {
-  width: 22vw;
-  margin: 5vh 1vw 5vh 1vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills__list__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.skills__list__image > * {
-  font-size: 120%;
-  width: 100%;
-  height: 100%;
-  color: #8CECF2;
-}
-.skills__list__image > img {
-  width: 50%;
-  height: 50%;
-}
-
-.skills__list__text > * {
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/*Modify this section in Portfolio branch*/
-.portfolio__header {
-  width: 80vw;
-  margin: 10vh 10vw 0 10vw;
-  font-size: 20px;
-}
-
-.portfolio {
-  height: 155vh;
-  width: 100vw;
-  display: flex;
-}
-.portfolio .portfolio__text {
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 5vw;
-}
-.portfolio .portfolio__text > div * {
-  margin: 5% 0;
-}
-.portfolio .portfolio__text > div .portfolio__description {
-  font-size: 14px;
-}
-.portfolio .portfolio__text > div .portfolio__recipe {
-  font-size: 12px;
-}
-.portfolio .portfolio__text > div .portfolio__buttons button {
-  padding: 5%;
-  margin-right: 6%;
-  font-weight: bold;
-  border: 2px solid #8CECF2;
-  background-color: #18181B;
-  border-radius: 4px;
-}
-.portfolio .portfolio__text > div .portfolio__buttons > a {
-  margin: 0;
-}
-.portfolio .portfolio__buttons button:hover {
-  color: #18181B;
-  background-color: #8CECF2;
-  cursor: pointer;
-}
-.portfolio .portfolio__images {
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-right: 5vw;
-}
-.portfolio .portfolio__images div {
-  height: 20vh;
-  width: 46vw;
-  border: 4px solid #8CECF2;
-  border-radius: 8px;
-}
-
-/*Modify this section in Contact branch*/
-.contact {
-  height: 15vh;
-  width: 100vw;
-  margin: 5vh 0;
-}
-.contact h4 {
-  margin: 0 5vw;
-  font-size: 14px;
-  font-weight: bold;
-}
-.contact .contact__details {
-  margin: 2vw 5vw;
-}
-.contact .contact__details span {
-  margin-right: 4vw;
-  font-size: 12px;
-}
-
+/*Variables*/
+/*16px is a p tag's default font size.*/
+/*Overall*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  text-decoration: none;
 }
 
 body {
   background-color: #18181B;
+}
+
+.headers {
+  font-size: 24px;
+  height: 100px;
+  padding-left: 50px;
+  line-height: 200%;
+}
+
+.section {
+  margin: 2%;
+}
+
+.button {
+  border: 3px solid #8CECF2;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*About Me*/
+.aboutme {
+  max-width: 100%;
+  height: auto;
+  min-height: 790px;
+  margin: 0;
+  padding: 2% 2% 2% 50px;
+  display: flex;
+  align-items: center;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutme .aboutme__intro {
+  margin-top: 1%;
+  width: 50%;
+  margin-left: 10%;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.aboutme .aboutme__intro h1 {
+  margin-bottom: 2%;
+}
+.aboutme .aboutme__intro .aboutme__contents {
+  margin-top: 4%;
+}
+.aboutme .aboutme__intro .aboutme__contents .contents__item > a {
+  color: #8CECF2;
+}
+.aboutme .aboutme__intro .aboutme__contents .contents__item > a:hover {
+  color: white;
+}
+.aboutme .aboutme__CV {
+  border: 4px solid #8CECF2;
+  height: 60px;
+  width: 14%;
+  margin-left: 9.5%;
+  margin-top: 9.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8CECF2;
+  color: #18181B;
+}
+.aboutme .aboutme__CV:hover {
+  background-color: #18181B;
+  color: white;
+}
+
+/*Skills*/
+.skills {
+  max-width: 100%;
+  height: auto;
+}
+
+.skills__list {
+  display: grid;
+  height: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+.skills__list > .skills__list__block {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  /*Icons*/
+}
+.skills__list > .skills__list__block > p {
+  font-size: 18px;
+}
+.skills__list > .skills__list__block > i {
+  font-size: 50px;
+  color: #8CECF2;
+  padding-bottom: 15px;
+}
+.skills__list > .skills__list__block > img {
+  padding-bottom: 15px;
+}
+
+/*Portfolio*/
+.portfolio {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio__body {
+  margin: 10px;
+  height: 85%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+}
+.portfolio__body .project {
+  width: 86%;
+  min-height: 200px;
+  max-height: 300px;
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-around;
+}
+.portfolio__body .project .portfolio__text {
+  margin-top: 4px;
+  width: 60%;
+  margin-right: 3%;
+}
+.portfolio__body .project .portfolio__text h4 {
+  margin-bottom: 6px;
+}
+.portfolio__body .project .portfolio__text .text__body {
+  font-size: 14px;
+  line-height: 20px;
+}
+.portfolio__body .project .portfolio__text .portfolio__links {
+  height: 25%;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+}
+.portfolio__body .project .portfolio__text .portfolio__links .portfolio__link {
+  margin-right: 10%;
+  padding: 4% 4%;
+  border: 3px solid #8CECF2;
+}
+.portfolio__body .project .portfolio__text .portfolio__links .portfolio__link:hover {
+  color: #18181B;
+  background-color: #8CECF2;
+}
+.portfolio__body .project .portfolio__image {
+  margin-left: 3%;
+}
+.portfolio__body .project .portfolio__image img {
+  border: 4px solid #8CECF2;
+  border-radius: 8px;
+  min-width: 25%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Contact*/
+.contact {
+  max-width: 100%;
+  height: auto;
+  padding-left: 50px;
+}
+.contact > .contact__details {
+  margin-top: 0.5%;
+  font-size: 14px;
+}
+.contact > .contact__details > span {
+  margin-right: 1%;
+}
+.contact > .contact__details > span > a {
+  color: #8CECF2;
+}
+.contact > .contact__details > span > a:hover {
+  color: white;
 }
 
 /*Divider formatting*/
@@ -239,142 +225,147 @@ body {
   height: 8px;
 }
 
-/*Common Tablet/Desktop Sizes:
-Tablet: 481-768px
-Laptop/Desktop: 769-1025px
-
-Formatting below is for desktop. Runs if window screen is 481px or more.
-*/
-@media screen and (min-width: 481px) {
-  body {
-    height: 400vh;
+/*Media formatting*/
+/*1. slight alterations to section height and padding, since they're in px*/
+/*2. alteration to skill icon padding*/
+@media screen and (max-width: 1025px) {
+  .section {
+    margin: 2% 0;
   }
 
   .aboutme {
-    height: 22.5%;
-    background-image: url("./backgroundbig.jpg");
-    background-size: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .aboutme .intro {
-    height: 30%;
-    width: 50%;
-    margin-right: 6%;
-  }
-  .aboutme .intro h1 {
-    width: 30%;
-    margin-top: 30%;
-  }
-  .aboutme .intro .intro > p {
-    width: 20%;
-  }
-  .aboutme button {
-    height: 10%;
-    width: 15%;
-    margin: 20% 22% 0 0%;
-    padding: 0;
-  }
-  .aboutme .contents {
-    margin-top: 0;
-    margin-right: 78%;
-    height: 26%;
-    /*Formatting below is for tablet; makes minor adjustments to desktop format. Runs if screen width is 1024px or less.*/
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .aboutme .contents {
-    margin-top: 10%;
-  }
-}
-@media screen and (min-width: 481px) {
-  .aboutme .contents .contents__header {
-    margin-bottom: 29%;
-  }
-}
-@media screen and (min-width: 481px) {
-  .skills {
-    margin-top: 1%;
-    height: 18%;
-  }
-  .skills h1 {
-    font-size: 28px;
-    margin-bottom: 4%;
-  }
-  .skills .skills__list__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .skills .skills__list__image > * {
-    font-size: 240%;
-    width: 200%;
-    height: 200%;
-    color: #8CECF2;
-  }
-  .skills .skills__list__image > img {
-    width: 100%;
-    height: 100%;
-  }
-  .skills .skills__list__text {
-    margin-top: 5px;
-  }
-  .skills .skills__list__text > p {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 481px) {
-  .portfolio__header {
-    margin-top: 4%;
-    margin-bottom: 3%;
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 481px) {
-  .portfolio {
-    height: 35%;
-    margin-left: 1%;
-  }
-  .portfolio .portfolio__text {
-    width: 50%;
-    margin-left: 10%;
-  }
-  .portfolio .portfolio__text > div * {
-    margin: 2% 0;
-  }
-  .portfolio .portfolio__text .portfolio__buttons button {
-    padding: 4% 6%;
-  }
-  .portfolio .portfolio__text .portfolio__buttons button:hover {
-    color: #18181B;
-    background-color: #8CECF2;
-    cursor: pointer;
-  }
-  .portfolio .portfolio__text > div .portfolio__buttons > a {
     margin: 0;
   }
-  .portfolio .portfolio__images {
-    width: 50%;
+
+  .portfolio__body {
+    margin: 0;
   }
-  .portfolio .portfolio__images > div {
-    height: 20%;
-    margin-left: 5%;
-    width: 60%;
+  .portfolio__body .project {
+    min-height: 100%;
+    width: 90%;
+    margin-bottom: 4%;
   }
-  .portfolio .projectfour {
-    margin-bottom: 8%;
+  .portfolio__body .portfolio__text {
+    margin-top: 4px;
+    width: 80%;
+    margin-right: 1%;
   }
-  .portfolio .imagefour {
-    margin-bottom: 8%;
+  .portfolio__body .portfolio__links {
+    max-height: 50px;
+    margin-top: 0;
+  }
+  .portfolio__body .portfolio__image {
+    margin-left: 1%;
+  }
+  .portfolio__body .portfolio__image img {
+    min-width: 5%;
+    max-width: 125px;
+    height: auto;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 1025px) and (max-width: 414px) {
+  .section {
+    margin: 0 0 10px 0;
+  }
+
+  .headers {
+    font-size: 18px;
+    height: 60px;
+    margin-top: 20px;
+    padding-left: 15px;
+    line-height: 200%;
+  }
+
+  .aboutme {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .aboutme .aboutme__intro {
+    margin: 30% 0 0 0;
+    width: 90%;
+  }
+  .aboutme .aboutme__intro h1 {
+    font-size: 24px;
+  }
+  .aboutme .aboutme__intro p {
+    font-size: 14px;
+  }
+  .aboutme .aboutme__CV {
+    height: 60px;
+    width: 150px;
+    margin: 90px 0 0 0;
+  }
+
+  .skills__list {
+    display: grid;
+    height: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skills__list > .skills__list__block > p {
+    font-size: 14px;
+  }
+
+  .portfolio {
+    min-height: 2900px;
+  }
+
+  .project {
+    flex-direction: column;
+    width: 90%;
+    height: 400px;
+    max-height: 400px;
+    padding: 180px 0;
+  }
+  .project .portfolio__text {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .project .portfolio__text .text__body {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .project .portfolio__image {
+    min-height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0;
+    padding: 0;
+  }
+  .project .portfolio__image img {
+    min-width: 0;
+  }
+
+  .portfolio__body {
+    grid-template-columns: 1fr;
+  }
+  .portfolio__body .portfolio__links {
+    margin: 50px 0 20px 0;
+  }
+  .portfolio__body .portfolio__links .portfolio__link {
+    margin-right: 0;
+    padding: 1% 1%;
+    border: 2px solid #8CECF2;
+  }
+
   .contact {
-    height: 3%;
+    margin: 10px;
+    padding-left: 5px;
+    font-size: 14px;
   }
   .contact h4 {
-    font-size: 20px;
+    line-height: 30px;
+  }
+  .contact > .contact__details {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact span {
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 }
