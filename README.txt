@@ -1,5 +1,3 @@
-This is a folder that will contain the remade code for the Portfolio site, because it's currently A Mess. I will paste this over into the Portfolio repository and push it once it's done.
+Portfolio created during the _nology 12-week Web Development course. Includes several coding projects created during the course, as well a coding project made outside of the course. Remade after initially being made using improved knowledge on HTML and CSS. 
 
-PLAN:
-
-The colours were fine, but the image needs sharpening on desktop and the layout needs a complete overhaul. All text can be reused.
+Links to Github Repositories and live versions are included with all listed projects.
